@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: clever_deployement_production
-  username: clever_deployement
-  password: <%= ENV['CLEVER_DEPLOYEMENT_DATABASE_PASSWORD'] %>
+  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>
